@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My E-Portfolio | Jude C. Gabute</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #dbe9ff, #b8d3ff);
+      color: #043a7a;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #0b63ce;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    header h1 {
+      font-size: 2.8em;
+    }
+
+    header h3 {
+      font-weight: 400;
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    main {
+      flex: 1;
+      max-width: 1300px;
+      margin: 60px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 0 30px;
+    }
+
+    .card {
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 280px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 4px solid #a5c8ff;
+      background: white;
+    }
+
+    .caption {
+      margin-top: 12px;
+      font-size: 1.1em;
+      font-weight: 500;
+      color: #043a7a;
+    }
+
+    footer {
+      background: #0b63ce;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 1em;
+      box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Responsive layout for mobile */
+    @media (max-width: 768px) {
+      main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+
+      .card img {
+        width: 90%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My E-Portfolio</h1>
+    <h3>Jude C. Gabute</h3>
+    <h3>9 - Fairness</h3>
+  </header>
+
+  <main>
+    <div class="card">
+      <a href="personal.html" target="_self">
+        <img src="https://drive.google.com/thumbnail?id=123_2qT2ZEbPD3EfklKJhOIIBiAyYxGob" alt="Personal Space">
+      </a>
+    
+    </div>
+
+    <div class="card">
+      <a href="ICT.html" target="_self">
+        <img src="https://drive.google.com/thumbnail?id=1-QZK90NJ5a2SaE4CooPlz5ELhSkPU_2g" alt="ICT Page">
+      </a>
+      
+    </div>
+
+    <div class="card">
+      <a href="reflection.html" target="_self">
+        <img src="https://drive.google.com/thumbnail?id=1SPW_9QMBxMD_8406mmI4AGlrwoCH9con" alt="Reflection Page">
+      </a>
+     </div>
+
+    <div class="card">
+      <a href="ap.html" target="_self">
+        <img src="https://drive.google.com/thumbnail?id=1MUOtzG94rJovBx3G8g8Dcarcgtczf2y3" alt="AP Page">
+      </a>
+     
+    </div>
+  </main>
+
+  <footer>
+    Created by Jude C. Gabute – 9 Fairness
+  </footer>
+</body>
+</html>
